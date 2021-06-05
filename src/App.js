@@ -1,5 +1,6 @@
 import React from "react";
 import './App.css';
+import './components/GenSection.js'
 
 class App extends React.Component {
   constructor(props){
