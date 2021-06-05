@@ -7,14 +7,23 @@
   width: 100%;
 }
 
-.editBtnDiv {
+.submitBtnDiv {
   width: 20%;
   margin-top: 2%;
   margin-left: 40%;
 }
 
-.editBtn {
+.submitBtn {
   width: 100%;
+}
+
+.editBtn {
+  background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
 }
 
 .container {
@@ -26,4 +35,17 @@
 
 input {
   width: 100%;
+}
+
+h2 {
+  text-align: center;
+}
+
+.editsection {
+  display: flex;
+  justify-content: space-around;
+}
+
+.printsection {
+  margin-left: 5%;
 }
