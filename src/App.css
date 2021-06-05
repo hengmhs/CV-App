@@ -3,7 +3,8 @@
 
 .fieldRow {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  width: 100%;
 }
 
 .editBtnDiv {
@@ -13,5 +14,16 @@
 }
 
 .editBtn {
+  width: 100%;
+}
+
+.container {
+  width: 30%;
+  margin-left: 35%;
+  margin-top: 5%;
+  outline: 1px solid black
+}
+
+input {
   width: 100%;
 }
