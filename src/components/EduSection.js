@@ -5,6 +5,7 @@ class EduSection extends React.Component {
       super(props);
       this.state = {
         isEditable: true,
+        isVisible: true,
         schoolName: 'Northbrooks University',
         titleStudy: 'BA Computer Science',
         startDate: '12 July 18',

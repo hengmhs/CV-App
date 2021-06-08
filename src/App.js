@@ -16,7 +16,7 @@ class App extends React.Component {
    
     addEdu(){
       console.log('test');
-      const education = this.state.education.concat(<GenSection/>);
+      const education = this.state.education.concat(<EduSection/>);
       console.log(education);
       this.setState({education: education});
     };
