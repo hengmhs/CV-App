@@ -50,8 +50,8 @@ class GenSection extends React.Component {
                   <div><input type="text" id='phoneNum' onChange = {this.handleChange} value = {this.state.phoneNum} /></div>  
                 </div>
               </div>
-              <div className='submitBtnDiv'>
-                <button className='submitBtn' onClick={this.changeEditStatus}>Submit</button>
+              <div className='BtnDiv'>
+                <button className='Btn' onClick={this.changeEditStatus}>Submit</button>
               </div>
           </div>
         );

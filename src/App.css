@@ -1,4 +1,9 @@
-.section {
+body {
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+}
+
+.container {
+  background-color: whitesmoke;
 }
 
 .fieldRow {
@@ -7,13 +12,22 @@
   width: 100%;
 }
 
-.submitBtnDiv {
+.BtnDiv {
+  display: flex;
   width: 20%;
   margin-top: 2%;
   margin-left: 40%;
 }
 
-.submitBtn {
+.OptionsBtnDiv {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  margin-top: 2%;
+  margin-left: 30%;
+}
+
+.Btn {
   width: 100%;
 }
 

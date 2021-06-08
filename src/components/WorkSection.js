@@ -1,15 +1,15 @@
 import React from "react";
 
-class EduSection extends React.Component {
+class WorkSection extends React.Component {
     constructor(props){
       super(props);
       this.state = {
         isEditable: true,
         isVisible: true,
-        schoolName: 'Northbrooks University',
-        titleStudy: 'BA Computer Science',
-        startDate: '12 July 18',
-        endDate: '30 August 21'
+        companyName: 'ABC Systems',
+        jobTitle: 'Junior Software Engineer',
+        startDate: '1 Jan 21',
+        endDate: '22 December 21'
       };
       this.changeEditStatus = this.changeEditStatus.bind(this);
       this.changeVisibleStatus = this.changeVisibleStatus.bind(this);
@@ -44,11 +44,11 @@ class EduSection extends React.Component {
               <div className='fieldRow'>
                 <div>
                   <div>School: </div>
-                  <div><input type="text" id='schoolName' onChange = {this.handleChange} value = {this.state.schoolName} /></div>  
+                  <div><input type="text" id='companyName' onChange = {this.handleChange} value = {this.state.companyName} /></div>  
                 </div>
                 <div>
                   <div>Title of Study: </div>
-                  <div><input type="text" id='titleStudy' onChange = {this.handleChange} value = {this.state.titleStudy} /></div>  
+                  <div><input type="text" id='jobTitle' onChange = {this.handleChange} value = {this.state.jobTitle} /></div>  
                 </div>
               </div>
               <div className='fieldRow'>
@@ -72,8 +72,8 @@ class EduSection extends React.Component {
         return (
           <div className='editsection'>
               <div className='printsection'>
-                <div><strong>{this.state.titleStudy}</strong></div>
-                <div><i>{this.state.schoolName}</i> </div>
+                <div><strong>{this.state.jobTitle}</strong></div>
+                <div><i>{this.state.companyName}</i> </div>
                 <div>{this.state.startDate} - {this.state.endDate}</div>
               </div>   
             <div className='editBtnDiv'>
@@ -86,5 +86,5 @@ class EduSection extends React.Component {
   }
   
   
-export default EduSection;
+export default WorkSection;
   
