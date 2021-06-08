@@ -5,10 +5,10 @@ class EduSection extends React.Component {
       super(props);
       this.state = {
         isEditable: true,
-        firstName: 'Lannister',
-        lastName: 'Sanders',
-        email: 'jeffers@gmail.com',
-        phoneNum: '91231234'
+        schoolName: 'Northbrooks University',
+        titleStudy: 'BA Computer Science',
+        startDate: '12 July 18',
+        endDate: '30 August 21'
       };
       this.changeEditStatus = this.changeEditStatus.bind(this);
       this.handleChange = this.handleChange.bind(this);
@@ -32,22 +32,22 @@ class EduSection extends React.Component {
           <div className='section'>   
               <div className='fieldRow'>
                 <div>
-                  <div>First Name: </div>
-                  <div><input type="text" id='firstName' onChange = {this.handleChange} value = {this.state.firstName} /></div>  
+                  <div>School: </div>
+                  <div><input type="text" id='schoolName' onChange = {this.handleChange} value = {this.state.schoolName} /></div>  
                 </div>
                 <div>
-                  <div>Last Name: </div>
-                  <div><input type="text" id='lastName' onChange = {this.handleChange} value = {this.state.lastName} /></div>  
+                  <div>Title of Study: </div>
+                  <div><input type="text" id='titleStudy' onChange = {this.handleChange} value = {this.state.titleStudy} /></div>  
                 </div>
               </div>
               <div className='fieldRow'>
               <div>
-                  <div>Email: </div>
-                  <div><input type="text" id='email' onChange = {this.handleChange} value = {this.state.email} /></div>  
+                  <div>Start Date: </div>
+                  <div><input type="text" id='startDate' onChange = {this.handleChange} value = {this.state.startDate} /></div>  
                 </div>
                 <div>
-                  <div>Phone Number: </div>
-                  <div><input type="text" id='phoneNum' onChange = {this.handleChange} value = {this.state.phoneNum} /></div>  
+                  <div>End Date: </div>
+                  <div><input type="text" id='endDate' onChange = {this.handleChange} value = {this.state.endDate} /></div>  
                 </div>
               </div>
               <div className='submitBtnDiv'>
@@ -60,9 +60,9 @@ class EduSection extends React.Component {
         return (
           <div className='editsection'>
               <div className='printsection'>
-                <div><strong>{this.state.firstName} {this.state.lastName}</strong></div>
-                <div>📧 {this.state.email} </div>
-                <div>📞 {this.state.phoneNum} </div>
+                <div><strong>{this.state.titleStudy}</strong></div>
+                <div><i>{this.state.schoolName}</i> </div>
+                <div>{this.state.startDate} - {this.state.endDate}</div>
               </div>   
             <div className='editBtnDiv'>
               <button className='editBtn' onClick={this.changeEditStatus}>🖊️</button>
